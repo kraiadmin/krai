@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/* -----------------------обнуление---------------------------------- */
+body {
+	font-family: 'Oswald', sans-serif;
+	background: url(bg.jpg);
+	background-size: cover;
+	background-repeat: y-repeat;
+	height: 100vh;
+	font-size: 20px;
+	color: aliceblue;
+	font-weight: 500;
+	background-color: rgb(155, 187, 222);
+	line-height: 1.7;
+
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+
+}
+
+.header {
+	display: flex;
+
+}
+
+h3 {
+	margin: 23px 0px 0px 20px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 800;
+
+}
+
+
+.map {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/* обработка страніц мінска */
+.photo {
+	float: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+p {
+	font-weight: 400;
+	padding: 150px 0px 0px 0px;
+	line-height: 1.2;
+
+}
+
+
+/* ------------------------
+ */
+/* @keyframes flicker {
+   
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+ 
+		 text-shadow:
+		 0 0 4px #fff,
+		 0 0 1px #fff,
+		 0 0 1px #fff,
+		 0 0 4px rgb(199, 138, 25),
+		 0 0 8px rgb(199, 138, 25),
+		 0 0 9px rgb(199, 138, 25),
+		 0 0 10px rgb(199, 138, 25),
+		 0 0 15px rgb(199, 138, 25)
+  
+	}
+	animation: flicker 1.5s infinite alternate;
+	20%, 24%, 55% {        
+		 text-shadow: none;
+	}    
+ } */
+
+img {
+	filter: drop-shadow(0 0 15px rgb(58, 115, 175));
+}
+
+.btt {
+	font-size: 40px;
+}
+
+.btt:last-child {
+	margin: 0px 0px 0px 150px;
+}
+
+/* ----------------------------------------------------------адаптация */
+@media (max-width: 516px) {
+	body {
+		height: 123vh;
+
+	}
+
+	h1 {
+		line-height: 1;
+		font-size: 19px;
+		padding: 25px 0px 0px 0px;
+	}
+
+	h3 {
+		line-height: 1;
+		font-size: 15px;
+
+	}
+
+	p {
+		line-height: 1;
+		font-size: 13px;
+	}
+	.btt:last-child {
+		margin: 0px 0px 0px 80px;
+	}
+}
